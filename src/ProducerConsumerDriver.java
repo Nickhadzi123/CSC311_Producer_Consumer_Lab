@@ -3,7 +3,7 @@ import java.util.List;
 
 
 public class ProducerConsumerDriver {
-    private static final int MAX_QUEUE_CAPACITY = 5;
+    private static final int MAX_QUEUE_CAPACITY = 10;
 
     public static void demoSingleProducerAndSingleConsumer() {
         DataQueue dataQueue = new DataQueue(MAX_QUEUE_CAPACITY);
@@ -33,7 +33,7 @@ public class ProducerConsumerDriver {
 
     public static void demoMultipleProducersAndMultipleConsumers() {
         DataQueue dataQueue = new DataQueue(MAX_QUEUE_CAPACITY);
-        int producerCount = 5;
+        int producerCount = 4;
         int consumerCount = 5;
         List<Thread> threads = new ArrayList<>();
         List<Producer> producers = new ArrayList<>();
